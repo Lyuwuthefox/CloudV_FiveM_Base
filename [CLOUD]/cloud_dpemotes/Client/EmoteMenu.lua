@@ -1,7 +1,7 @@
 TriggerServerEvent("dp:CheckVersion")
 
 rightPosition = {x = 1450, y = 100}
-leftPosition = {x = 0, y = 100}
+leftPosition = {x = 620, y = 100}
 menuPosition = {x = 0, y = 200}
 
 if Config.MenuPosition then
@@ -25,7 +25,7 @@ else
 end
 
 _menuPool = NativeUI.CreatePool()
-mainMenu = NativeUI.CreateMenu("", "Bloodline Roleplay", menuPosition["x"], menuPosition["y"], Menuthing, Menuthing)
+mainMenu = NativeUI.CreateMenu("", "CloudV RPG", menuPosition["x"], menuPosition["y"], Menuthing, Menuthing)
 _menuPool:Add(mainMenu)
 
 function ShowNotification(text)

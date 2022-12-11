@@ -21,9 +21,9 @@ Config = {
 -- Use a 512 x 128 image!
 -- NOte this might cause an issue of the image getting stuck on peoples screens
 	CustomMenuEnabled = true,
-	MenuImage = "https://cdn.discordapp.com/attachments/886065407172157442/888480798917935254/1024.jpg",
+	MenuImage = "https://cdna.artstation.com/p/assets/images/images/041/571/736/large/leys-1.jpg?1632086359",
 -- You can change the menu position here
-	MenuPosition = "left", -- (left, right)
+	MenuPosition = "right", -- (left, right)
 -- You can disable the Ragdoll keybinding here.
 	RagdollEnabled = false,
 	RagdollKeybind = 303, -- Get the button number here https://docs.fivem.net/game-references/controls/
