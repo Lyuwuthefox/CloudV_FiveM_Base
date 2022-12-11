@@ -1,0 +1,17 @@
+/* Customize the colors for yourself*/
+
+:root {
+    --background: linear-gradient(180deg, #002939e0 0%, #000000e0 100%);
+    --button: #004b5e;
+    --button2: linear-gradient(180deg, #0051768c 0%, #00000000 248.89%);
+    --boxshadow: #003c5e40;
+    --weiterecolor: #146ec28c;
+    --listshadow: linear-gradient(90deg, #002d718c 0%, #00000000 100%);
+    --hover: #04649b8c;
+    --slider: #00297659;
+    --noscreenshotyet: #5e00008c;
+    --top: #004bad;
+    --notify: linear-gradient(180deg, #002d71 20%, rgba(43, 39, 39, 0.53) 100%);
+}
+
+/* Customize the colors for yourself*/
