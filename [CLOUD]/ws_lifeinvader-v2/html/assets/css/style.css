@@ -1,0 +1,22 @@
+:root {
+    --main-white: #FFFFFF;
+    --main-white-2: rgba(255, 255, 255, 0.32);
+    --main-white-3: rgba(255, 255, 255, 0.48);
+    --main-white-4: rgba(255, 255, 255, 0.57);
+    --main-white-5: rgba(255, 255, 255, 0.16);
+    --main-white-6: rgba(255, 255, 255, 0.24);
+    --main-white-7: rgba(255, 255, 255, 0.64);
+    --main-white-8: rgba(255, 255, 255, 0.45);
+
+    --main-black: rgba(0, 0, 0, 0.4);
+    --main-black-2: rgba(18, 20, 27, 0.8);
+
+    --main-blue-hover: #0b9af5;
+    --main-blue-hover-2: #0b9bf58e;
+
+    --main-red: rgb(228, 39, 39);
+    --main-green: #65BC6A;
+
+    --main-bg: rgba(255, 255, 255, 0.02);
+    --main-gradient: radial-gradient(40.93% 40.93% at 50% 97.5%, rgba(33, 105, 134, 0.066) 4.88%, rgba(255, 255, 255, 0) 100%), radial-gradient(46.28% 146.26% at 96.28% 60.79%, rgba(33, 105, 134, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(76.46% 241.65% at 5.23% 8.7%, rgba(33, 105, 134, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #12141B;
+}

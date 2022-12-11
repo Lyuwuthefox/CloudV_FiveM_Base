@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<!-- External CSS libraries -->
+	<link type="text/css" rel="stylesheet" href="assets/css/style.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/fonts.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="form">
+		<div class="box-charakter">
+			<div class="headerbox">
+				<img class="logo" src="assets/images/logo.svg" alt="">
+			</div>
+			<div class="text-column">
+				<p class="text-header"></p>
+				<p class="berlincity"></p>
+				<p class="text-two">
+					<br>Der Name muss der Form <span class="text-red">"Vorname Nachname"</span> entsprechen und 
+					<br>darf keine Wortspiele, sowie <span class="text-color">Zahlen</span> und <span class="text-color">Zeichen</span> enthalten.
+				</p>
+			</div>
+			<div class="man-bg">
+				<img class="bg-text" src="assets/images/bgtext.png" alt="">
+				<img class="man-img" src="assets/images/man.png" alt="">
+			</div>
+			<div class="liner"></div>
+			<div class="input-box">
+				<div class="input-panel">
+					<img class="icon-input" src="assets/images/man-icon.svg" alt="">
+					<input class="input-pnl" type="text" id="firstname" name="name" placeholder="VORNAME" maxlength="20">
+				</div>
+				<div class="input-panel">
+					<img class="icon-input" src="assets/images/man-icon.svg" alt="">
+					<input class="input-pnl" type="text" id="lastname" name="name" placeholder="NACHNAME" maxlength="20">
+				</div>
+				<div class="input-panel">
+					<img class="icon-input" src="assets/images/calendar.svg" alt="">
+					<input class="input-pnl" type="text" id="dateofbirth" name="name" placeholder="GEBURTSDATUM" maxlength="20">
+				</div>
+				<div class="input-panel">
+					<img class="icon-input" src="assets/images/grobe.svg" alt="">
+					<input class="input-pnl" type="number" id="height" name="name" placeholder="GRÖSSE" maxlength="20">
+				</div>
+				<div class="button-box">
+					<div class="btn selected" id="m" onclick="Toggle('m')">Männlich</div>
+					<div class="btn" id="f" onclick="Toggle('f')">Weiblich</div>
+				</div>
+				<button class="button-done" onclick="Submit()">EINREISEN</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

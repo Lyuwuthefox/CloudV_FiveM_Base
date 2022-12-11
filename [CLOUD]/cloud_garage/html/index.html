@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<!-- External CSS libraries -->
+		<link type="text/css" rel="stylesheet" href="assets/css/style.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/fonts.css">
+
+	</head>
+
+	<body>
+		<div class="form">
+			<div class="box-garage">
+				<div class="headerbox">
+					<img class="logo" src="assets/images/logo.png" alt="">
+					<div class="text-column">
+						<p class="header-text">GARAGE</p>
+					</div>
+				</div>
+				<div class="search">
+					<div class="search-icn">
+						<svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M7.89107 3.0111C5.48462
+								3.26931 3.5564 5.03306 3.08174 7.41017C2.97275 7.9559 2.97275 8.88178
+								3.08174 9.42751C3.2984 10.5125 3.8106 11.4793 4.57211 12.2405C5.35289
+								13.021 6.27716 13.5147 7.3989 13.7504C7.9224 13.8604 8.88753 13.8617
+								9.42624 13.7531C10.0353 13.6303 10.6854 13.3856 11.1465 13.1056C11.2733
+								13.0285 11.3866 12.9655 11.3982 12.9655C11.4099 12.9655 12.0689 13.6119
+								12.8628 14.4021C14.5024 16.0339 14.4609 16.0019 14.9342 15.9996C15.2748
+								15.998 15.4789 15.9174 15.6987 15.6977C15.92 15.4764 15.9999 15.2737
+								15.9999 14.9334C15.9999 14.4566 16.0341 14.5007 14.3947 12.8548C13.0009
+								11.4554 12.9513 11.4013 12.9976 11.328C13.3599 10.754 13.616 10.1086
+								13.7546 9.42059C13.8623 8.88558 13.8613 7.95658 13.7525 7.41017C13.3147
+								5.21313 11.6377 3.52874 9.45244 3.09114C9.11987 3.02454 8.20355 2.97758
+								7.89107 3.0111ZM8.99421 4.66804C9.79323 4.78931 10.5168 5.15755 11.0983
+								5.73877C12.5868 7.22674 12.5868 9.61094 11.0983 11.0989C9.96949 12.2273
+								8.25443 12.5356 6.83592 11.8654C5.6541 11.3069 4.85577 10.2516 4.66497
+								8.99565C4.41889 7.3759 5.22377 5.79961 6.68114 5.04721C7.40518 4.67337
+								8.18617 4.54535 8.99421 4.66804Z" fill="white" fill-opacity="0.15"/>
+							</svg>
+						</div>
+						<p class="text-hd">Fahrzeug suchen</p>
+						<input class="searchinput" type="search" placeholder="SUCHEN">
+					</div>
+					<div class="buttons">
+						<p class="text-hd" id="text">ausparken/einparken</p>
+						<button class="btn" id="ausparken" onclick="ShowCars('ausparken')">AUSPARKEN</button>
+						<button class="btn" id="einparken" onclick="ShowCars('einparken')">EINPARKEN</button>
+					</div>
+					<div class="favorit">
+						<p class="text-hd">FAVORITEN</p>
+						<button class="btn selected" id="fav">
+							<svg class="favoriticn" viewBox="0 0 16 16" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M16 6.11115L10.1863 5.71409L7.99681 0L5.80734 5.71409L0
+									6.11115L4.45419 10.0401L2.99256 16L7.99681 12.714L13.0011 16L11.5395
+									10.0401L16 6.11115Z" fill="white" fill-opacity="0.15"/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="carbox">
+							<div class="carboxlist">
+
+							</div>
+						</div>
+						<div class="carbox helicopter" style="display: none;">
+							<div class="carboxlist">
+							</div>
+						</div>
+						<div class="carbox boat" style="display: none">
+							<div class="carboxlist" style="display: none">
+							</div>
+						</div>
+						<div class="carbox impound" style="display: none">
+							<div class="carboxlist">
+							</div>
+						</div>
+						<div class="carbox impoundboat" style="display:none ">
+							<div class="carboxlist">
+							</div>
+						</div>
+						<div class="carbox impoundhelicopter" style="display: none">
+							<div class="carboxlist">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5.0.11/dark.min.css">
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.28/dist/sweetalert2.all.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous"></script>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,195 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	user-select: none;  
+}
+
+body, html {
+	text-transform: uppercase;
+	font-size: 0.625vw;
+	height: 100%;
+	width: 100%;
+}
+.form {
+    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 100vw;
+    height: 100vh;
+	overflow: hidden;
+}
+.box-charakter {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 55.521vw;
+	height: 77.500vh;
+	background: rgba(12, 0, 0, 0.93);
+	border-radius: 10px;
+}
+.headerbox {
+	position: absolute;
+	top: 3.519vh;
+}
+.logo {
+	margin-left: 0vw;
+	width: 3.125vw;
+	height: 5.556vh;
+}
+.text-column {
+	color: white;
+	text-align: center;
+	font-size: 0.625vw;
+	margin-top: 10.000vh;
+}
+.text-header {
+	font-family: 'ExtraBold';
+	white-space: nowrap;
+}
+.text-header span {
+	color: red;
+	text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.5);
+}
+.berlincity {
+	color: rgba(255, 255, 255, 0.25);
+	font-size: 0.625vw;
+	margin-top: 0.3vh;
+	font-family: 'SemiBold';
+	letter-spacing: 0.14em;
+}
+.text-red  {
+	color: red;
+}
+.text-two {
+	font-family: 'SemiBold';
+	color: rgba(255, 255, 255, 0.25);
+}
+.text-color {
+	color: white;
+}
+.man-bg {
+	position: absolute;
+	left: 4.271vw;
+	top: 13.056vh;
+}
+.man-img {
+	position: absolute;
+	width: 22.292vw;
+	height: 64.444vh;
+}
+.bg-text {
+	position: absolute;
+	top: 8.796vh;
+	left: 1.250vw;
+	width: 20.052vw;
+	height: 51.667vh;
+}
+.liner {
+	position: absolute;
+	bottom: 5.093vh;
+	width: 0.104vw;
+	height: 50.833vh;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.15) 47.37%, rgba(0, 0, 0, 0) 100%);
+}
+.input-box {
+	position: absolute;
+	bottom: 8.519vh;
+	width: 18.021vw;
+	right: 6.458vw;
+}
+.input-pnl {
+	margin-top: 0.741vh;
+	transition: .2s;
+	text-align: center;
+	width: 18.021vw;
+	height: 6.759vh;
+	border: none;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 0.25);
+	font-family: 'SemiBold';
+	font-size: 0.625vw;
+}
+.input-pnl:focus {
+	color: white;
+	text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
+}
+input {outline:none;}
+.input-pnl:first-child {
+	margin-top: 0;
+}
+.input-panel {
+	position: relative;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.icon-input {
+	position: absolute;
+	left: 1.206vw;
+	top: 2.8vh;
+	width: 1.510vw;
+	height: 2.685vh;
+}
+.button-box {
+	margin-top: 0.741vh;
+	display: flex;
+}
+.btn {
+	transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.802vw;
+	height: 6.759vh;
+	margin-left: 0.417vw;
+	font-family: 'SemiBold';
+	color: rgba(255, 255, 255, 0.25);
+	font-size: 0.625vw;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+	border-radius: 2px;
+}
+
+.selected {
+	text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
+	color: white;
+	background: linear-gradient(90deg, rgba(255, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.btn:hover:not(.selected) {
+	text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
+	color: white;
+	background: linear-gradient(90deg, rgba(255, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.button-box .btn:first-child {
+    margin-left: 0;
+}
+.button-done {
+	transition: .2s;
+	color: rgba(255, 255, 255, 0.25);
+	font-family: 'SemiBold';
+	font-size: 0.625vw;
+	width: 18.021vw;
+	height: 6.759vh;
+	margin-top: 1.852vh;
+	background: linear-gradient(90deg, rgba(255, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+	border-radius: 4px;
+	border: none;
+}
+.button-done:hover {
+	text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
+	color: white;
+	background: linear-gradient(90deg, rgba(255, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+	box-shadow: -40px 0px 75px rgba(255, 0, 0, 0.15);
+}
+.button-done:active {
+	background: linear-gradient(90deg, rgba(255, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

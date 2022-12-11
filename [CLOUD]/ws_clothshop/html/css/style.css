@@ -1,0 +1,31 @@
+:root {
+	--clr-white-txt-color: #ffffff; 
+	--clr-white-input-color: rgba(255, 255, 255, 1); 
+	--clr-white-head-txt-color: rgba(255, 255, 255, 0.57); 
+	
+    --clr-second-half-opacity-white: rgba(255, 255, 255, 0.48);  
+	--clr-transparent-white-text: rgba(255, 255, 255, 0.32);  
+
+	--clr-hover-car-white-low-opacity: rgba(255, 255, 255, 0.1); 
+	--clr-low-opacity-white-for-background: rgba(255, 255, 255, 0.08); 
+	--clr-low-opacity-white-for-category: rgba(255, 255, 255, 0.24); 
+
+	--clr-btn-background: rgba(255, 255, 255, 0.04);
+	--clr-btn-background-hover: rgba(255, 255, 255, 0.12);
+	--clr-btn-background-selected: rgba(31, 119, 177, 0.48);
+	--clr-btn-background-second: rgba(255, 255, 255, 0.05);
+
+	--clr-blue: #1F77B1;
+	--clr-blue-shadow: rgba(31, 119, 177, 0.3);
+	--clr-blue-opacity: rgba(18, 20, 27, 0.16); 
+
+    --clr-green-opacity: rgba(51, 255, 0, 0.16); 
+    --clr-green-background: rgba(51, 255, 0, 0.05); 
+    --clr-green-background-hover: rgba(51, 255, 0, 0.171); 
+
+    --clr-black-opacity: rgba(0, 0, 0, 0.24); 
+	--clr-black-opacity-second: rgba(0, 0, 0, 0.32); 
+
+	--clr-main-background-gradient: radial-gradient(40.93% 40.93% at 50% 97.5%, rgba(33, 105, 134, 0.0528) 4.88%, rgba(255, 255, 255, 0) 100%), radial-gradient(46.28% 146.26% at 96.28% 60.79%, rgba(33, 105, 134, 0.16) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(76.46% 241.65% at 5.23% 8.7%, rgba(33, 105, 134, 0.16) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(60.37% 60.37% at 50% 50%, rgba(18, 20, 27, 0) 0%, #12141B 100%);
+    --clr-popup-background-gradient: radial-gradient(40.93% 40.93% at 50% 97.5%, rgba(33, 105, 134, 0.066) 4.88%, rgba(255, 255, 255, 0) 100%), radial-gradient(46.28% 146.26% at 96.28% 60.79%, rgba(33, 105, 134, 0.2) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(76.46% 241.65% at 5.23% 8.7%, rgba(33, 105, 134, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #12141B;
+}

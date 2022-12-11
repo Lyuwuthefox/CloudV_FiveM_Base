@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'Akzidenz-Bold';
+  src: url('../fonts/AkzidenzGroteskPro-Ext.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akzidenz-Light';
+  src: url('../fonts/AkzidenzGroteskPro-LightEx.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0%);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) translateX(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes upAndDownTransform {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: .7;
+  }
+  50% {
+    transform: translate(-50%, -55%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: .7;
+  }
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  
+  background: radial-gradient(47.52% 47.54% at 50% 50%, rgba(0, 98, 255, 0.322) 0%, rgba(0, 8, 19, 0.96) 100%);
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 44vh;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 2.5s ease-in-out,
+  upAndDownTransform 2.5s ease-in-out infinite;
+}
+
+.info {
+  position: absolute;
+  top: 50%;
+  display: grid;
+  gap: 1vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: fit-content;
+  transform: translateY(-50%);
+}
+
+.info.left {
+  left: 4vh;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.info.right {
+  right: 4vh;
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.info .info-item {
+  display: grid;
+  grid-template-columns: 5.25vh 1fr;
+  width: 30vh;
+  height: fit-content;
+  border: .1vh solid transparent;
+  border-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 91.15%);
+  background: linear-gradient(90deg, rgba(69, 65, 255, 0.035) 0.5%, rgba(69, 65, 255, 0) 100%);
+  border-image-slice: 1;
+  box-sizing: content-box;
+}
+
+.info.right .info-item {
+  display: grid;
+  grid-template-columns: 1fr 5.25vh;
+  width: 30vh;
+  height: fit-content;
+  border: .1vh solid transparent;
+  border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 91.15%);
+  background: linear-gradient(90deg, rgba(69, 65, 255, 0) 0.5%, rgba(69, 65, 255, 0.035) 100%);
+  border-image-slice: 1;
+  box-sizing: content-box;
+}
+
+.info.right .info-item .icon {
+  justify-self: end;
+}
+
+.info .info-item .icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .4vh;
+  width: 3.9vh;
+  height: 3.9vh;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.info .info-item .icon iconify-icon {
+  color: #0b9af5;
+  font-size: 2.8vh;
+  text-align: center;
+  filter: drop-shadow(0px 0px 1.5vh rgb(0, 102, 255));
+}
+
+.info.right .info-item p {
+  justify-self: flex-end;
+}
+
+.info .info-item p {
+  display: flex;
+  align-items: center;
+  font-family: 'Akzidenz-Bold', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4vh;
+  line-height: 3.9vh;
+  color: rgb(255, 255, 255, .75);
+  text-shadow: 0vh 0vh 1vh rgba(255, 255, 255, 0.25);
+}
+
+.info .info-item p span {
+  margin-left: .5vh;
+  font-family: 'Akzidenz-Light', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4vh;
+  line-height: 3.9vh;
+  color: rgb(255, 255, 255, .25);
+  text-shadow: none;
+}
+
+.loading-bar {
+  position: absolute;
+  bottom: 8vh;
+  left: 50%;
+  width: fit-content;
+  transform: translateX(-50%);
+}
+
+.loading-bar .bar {
+  width: 50vh;
+  height: .6vh;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.loading-bar .bar-inner {
+  width: 0%;
+  height: .6vh;
+  background: #0b9af5;
+  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  filter: drop-shadow(0vh 0vh 1vh rgb(0, 102, 255));
+}
+
+.loading-bar .bar-info {
+  margin-bottom: .5vh;
+}
+
+.loading-bar .bar-info p {
+  font-family: 'Akzidenz-Light', sans-serif;
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.2vh;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.15);
+}
+
+.loading-bar .bar-info p span.highlighted {
+  color: #0b9af5;
+  text-shadow: 0 0 .5vh rgb(0, 102, 255);
+  font-family: 'Akzidenz-Bold', sans-serif;
+  font-size: 1.2vh;
+  text-transform: uppercase;
+  text-shadow: none;
+}
