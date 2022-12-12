@@ -1,5 +1,5 @@
 module.exports = {
-    "mumbleVoice": true,
+    "mumbleVoice": false,
     "pmaVoice": false,
     "oxmysql": true,
     "debug": true,
@@ -53,5 +53,5 @@ module.exports = {
         "snake": "",
         "camera": ""
     },
-    "imgurId": ""
+    "imgurId": "d9de873b35d4b03"
 }
