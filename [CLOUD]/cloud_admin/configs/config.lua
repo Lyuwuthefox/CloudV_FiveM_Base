@@ -6,7 +6,7 @@ CS.EasyAdminBanTrigger = 'EasyAdmin:banPlayer'
 
 --Permission Settings
 CS.Perms = {}
-CS.Perms.AdminBypass = { 'admin' } --All Functions and dont need to be in Admin Duty! [Also some Troll Stuff]
+CS.Perms.AdminBypass = { 'projektleitung' } --All Functions and dont need to be in Admin Duty! [Also some Troll Stuff]
 CS.Perms.Godmoderatore = { 'superadministrator', 'admin', 'projektleitung', 'manager' }
 CS.Perms.NameTags = { 'mod', 'supporter','admin', 'superadministrator', 'projektleitung', 'manager' }
 CS.Perms.NoClip = { 'admin', 'superadministrator', 'projektleitung', 'manager' }
@@ -35,12 +35,12 @@ AdminDutys = {
     ['admin'] = {
         male = {
             ['tshirt_1'] = 15,  ['tshirt_2'] = 0,
-            ['torso_1'] = 374,   ['torso_2'] = 3,
+            ['torso_1'] = 287,   ['torso_2'] = 2,
             ['arms'] = 9,   ['arms2'] = 0,
-            ['pants_1'] = 148,   ['pants_2'] = 3,
-            ['shoes_1'] = 93,   ['shoes_2'] = 3,
-            ['helmet_1'] = -1,  ['helmet_2'] = 0,
-            ['mask_1'] = 190,  ['mask_2'] = 3
+            ['pants_1'] = 114,   ['pants_2'] = 2,
+            ['shoes_1'] = 78,   ['shoes_2'] = 2,
+            ['helmet_1'] = -1,  ['helmet_2'] = 2,
+            ['mask_1'] = 135,  ['mask_2'] = 0
         },
         female = {
             ['tshirt_1'] = 15,  ['tshirt_2'] = 0,
@@ -55,12 +55,12 @@ AdminDutys = {
     ['superadministrator'] = {
         male = {
             ['tshirt_1'] = 15,  ['tshirt_2'] = 0,
-            ['torso_1'] = 374,   ['torso_2'] = 0,
+            ['torso_1'] = 287,   ['torso_2'] = 1,
             ['arms'] = 9,   ['arms2'] = 0,
-            ['pants_1'] = 148,   ['pants_2'] = 0,
-            ['shoes_1'] = 93,   ['shoes_2'] = 0,
-            ['helmet_1'] = -1,  ['helmet_2'] = 0,
-            ['mask_1'] = 190,  ['mask_2'] = 0
+            ['pants_1'] = 114,   ['pants_2'] = 1,
+            ['shoes_1'] = 78,   ['shoes_2'] = 1,
+            ['helmet_1'] = -1,  ['helmet_2'] = 1,
+            ['mask_1'] = 135,  ['mask_2'] = 0
         },
         female = {
             ['tshirt_1'] = 15,  ['tshirt_2'] = 0,
@@ -75,12 +75,12 @@ AdminDutys = {
     ['projektleitung'] = {
         male = {
             ['tshirt_1'] = 15,  ['tshirt_2'] = 0,
-            ['torso_1'] = 374,   ['torso_2'] = 2,
+            ['torso_1'] = 287,   ['torso_2'] = 0,
             ['arms'] = 9,   ['arms2'] = 0,
-            ['pants_1'] = 148,   ['pants_2'] = 2,
-            ['shoes_1'] = 93,   ['shoes_2'] = 2,
+            ['pants_1'] = 114,   ['pants_2'] = 0,
+            ['shoes_1'] = 78,   ['shoes_2'] = 0,
             ['helmet_1'] = -1,  ['helmet_2'] = 0,
-            ['mask_1'] = 190,  ['mask_2'] = 2
+            ['mask_1'] = 135,  ['mask_2'] = 0
         },
         female = {
             ['tshirt_1'] = 15,  ['tshirt_2'] = 0,
@@ -95,12 +95,12 @@ AdminDutys = {
     ['mod'] = {
         male = {
             ['tshirt_1'] = 15,  ['tshirt_2'] = 0,
-            ['torso_1'] = 374,   ['torso_2'] = 4,
+            ['torso_1'] = 287,   ['torso_2'] = 5,
             ['arms'] = 9,   ['arms2'] = 0,
-            ['pants_1'] = 148,   ['pants_2'] = 4,
-            ['shoes_1'] = 93,   ['shoes_2'] = 4,
+            ['pants_1'] = 114,   ['pants_2'] = 5,
+            ['shoes_1'] = 78,   ['shoes_2'] = 5,
             ['helmet_1'] = -1,  ['helmet_2'] = 0,
-            ['mask_1'] = 190,  ['mask_2'] = 4
+            ['mask_1'] = 135,  ['mask_2'] = 5
         },
         female = {
             ['tshirt_1'] = 15,  ['tshirt_2'] = 0,
@@ -115,12 +115,12 @@ AdminDutys = {
     ['manager'] = {
         male = {
             ['tshirt_1'] = 15,  ['tshirt_2'] = 0,
-            ['torso_1'] = 374,   ['torso_2'] = 1,
+            ['torso_1'] = 287,   ['torso_2'] = 7,
             ['arms'] = 9,   ['arms2'] = 0,
-            ['pants_1'] = 148,   ['pants_2'] = 1,
-            ['shoes_1'] = 93,   ['shoes_2'] = 1,
+            ['pants_1'] = 114,   ['pants_2'] = 7,
+            ['shoes_1'] = 78,   ['shoes_2'] = 7,
             ['helmet_1'] = -1,  ['helmet_2'] = 0,
-            ['mask_1'] = 190,  ['mask_2'] = 1
+            ['mask_1'] = 135,  ['mask_2'] = 7
         },
         female = {
             ['tshirt_1'] = 15,  ['tshirt_2'] = 0,
@@ -135,12 +135,12 @@ AdminDutys = {
     ['supporter'] = {
         male = {
             ['tshirt_1'] = 15,  ['tshirt_2'] = 0,
-            ['torso_1'] = 374,   ['torso_2'] = 5,
+            ['torso_1'] = 287,   ['torso_2'] = 4,
             ['arms'] = 9,   ['arms2'] = 0,
-            ['pants_1'] = 148,   ['pants_2'] = 5,
-            ['shoes_1'] = 93,   ['shoes_2'] = 5,
+            ['pants_1'] = 114,   ['pants_2'] = 4,
+            ['shoes_1'] = 78,   ['shoes_2'] = 4,
             ['helmet_1'] = -1,  ['helmet_2'] = 0,
-            ['mask_1'] = 190,  ['mask_2'] = 5
+            ['mask_1'] = 135,  ['mask_2'] = 4
         },
         female = {
             ['tshirt_1'] = 15,  ['tshirt_2'] = 0,
@@ -181,16 +181,16 @@ Menu.Sounds.ErrorSoundRef = 'ERROR'
 CS.Perms.PlayerList.SetAccountMoney = { 'superadministrator', 'projektleitung' }
 CS.Perms.Guide = { 'guide', 'supporter', 'projektleitung', 'mod', 'superadministrator', 'manager', 'admin' }
 CS.GuideStuff = {}
-CS.GuideStuff.ReinCoords =  { x = -1067.34, y = -2801.23, z = 27.70 }
+CS.GuideStuff.ReinCoords =  { x = -1100.55, y = -2756.53, z = 20.34 }
 CS.GuideStuff.RausCoords =  { x = 258.21, y = -785.42, z = 30.46 } 
 CS.GuideStuff.UsePremadeOutfit = true
 CS.GuideStuff.GuideOutfit = { --Only gets used if UsePremadeOutfit is true
     male = {
-        ['tshirt_1'] = 36,  ['tshirt_2'] = 0,
-        ['torso_1'] = 118,   ['torso_2'] = 0,
+        ['tshirt_1'] = 31,  ['tshirt_2'] = 0,
+        ['torso_1'] = 30,   ['torso_2'] = 5,
         ['arms'] = 4,
-        ['pants_1'] = 62,   ['pants_2'] = 0,
-        ['shoes_1'] = 24,   ['shoes_2'] = 4,
+        ['pants_1'] = 48,   ['pants_2'] = 0,
+        ['shoes_1'] = 43,   ['shoes_2'] = 0,
         ['mask_1'] = 0,  ['mask_2'] = 0,
         ['chain_1'] = 1,   ['chain_2'] = 0,
         ['helmet_1'] = -1,  ['helmet_2'] = 0

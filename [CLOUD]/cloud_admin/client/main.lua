@@ -635,7 +635,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                     TriggerEvent('el_duty_ye')
 
-                    TriggerEvent("b_notify", "success", "ADMIN SYSTEM", "Du befindest dich nun im Admin Dienst!", 5000)
+                    TriggerEvent("sanity:notify", "ADMINMENU", "Du hast den Admin Mode betreten", 5000,"success")
 
                 else
 
@@ -651,7 +651,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                     Wait(250)
 
-                    TriggerEvent("b_notify", "error", "ADMIN SYSTEM", "Du hast den Admin Dienst deaktiviert! - Viel Spaß im Roleplay", 5000)
+                    TriggerEvent("sanity:notify", "ADMINMENU", "Du hast den Admin Mode verlassen", 5000,"error")
 
                 end
 
@@ -679,7 +679,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                         SetEntityOnlyDamagedByRelationshipGroup(PlayerPedId(), true, 69420)
 
-                        TriggerEvent("b_notify", "success", "GODMODE", "Du bist nun Unsterblich", 5000)
+                        TriggerEvent("sanity:notify", "ADMINMENU", "Du hast den Godmode aktiviert", 5000,"success")
 
                     else
 
@@ -687,7 +687,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                         SetEntityOnlyDamagedByRelationshipGroup(PlayerPedId(), false, 69420)
 
-                        TriggerEvent("b_notify", "error", "GODMODE", "Du bist nun wieder Verwundbar", 5000)
+                        TriggerEvent("sanity:notify", "ADMINMENU", "Du hast den Godmode deaktiviert", 5000,"error")
 
                     end
 
@@ -711,9 +711,9 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                         if GetCurrentServerEndpoint() == '193.42.11.164:30120' then
 
-                            TriggerEvent("b_notify", "success", "NAMETAGS", "Du siehst nun die Nametags der Spieler!", 5000)
+                            TriggerEvent("sanity:notify", "ADMINMENU", "Du hast die Nametags aktiviert!", 5000,"success")
                             
-                            TriggerEvent("b_notify", "warning", "NAMETAGS", "Solltest du dies zu deinem Vorteilnutzen so kann dies zu einem Teamkick o. Derank führen!", 5000)
+                            TriggerEvent("sanity:notify", "HINWEIß", "Sollten die Nametags im RP Verwendet werden so kann dies zu einem Derank führen", 5000,"warning")
 
                         else
 
@@ -725,7 +725,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                         TriggerServerEvent('cs-adminmenu:usedFeature', 'nametags_off')
 
-                        TriggerEvent("b_notify", "error", "NAMETAGS", "Du hast alle Nametags deaktiviert!", 5000)
+                        TriggerEvent("sanity:notify", "ADMINMENU", "Du hast die Nametags deaktiviert", 5000,"error")
 
                     end
 
@@ -776,10 +776,12 @@ function RageUI.PoolMenus:El_Main_Menu()
                     if IsChecked then
 
                         NoClip_Active = true
+                        TriggerEvent("sanity:notify", "ADMINMENU", "Du bist in den NoClip gegangen", 5000,"success")
 
                     else
 
                         NoClip_Active = false
+                        TriggerEvent("sanity:notify", "ADMINMENU", "Du hast den Noclip verlassen", 5000,"error")
 
                     end
 
@@ -821,7 +823,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                     SetPedArmour(PlayerPedId(), 100)
 
-                    TriggerEvent('b-notify:notify', 'success', 'Admin System', 'Du hast dich erfolgreich geheilt!')
+                    TriggerEvent("sanity:notify", "ADMINMENU", "Deine Lebenspunkte wurden auf 100% gesetzt", 5000,"success")
 
                     
 
@@ -871,7 +873,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                 if checkESXPerms('CarSpawn') and In_Admin_Duty or AdminBypass() then
 
-                    local car = KeyboardInput('Test', 'Welches Auto soll gespawnt werden?', '', 25)
+                    local car = KeyboardInput('Test', 'Bitte gebe die SpawnID des Autos ein', '', 25)
 
                     if car ~= nil then
 
@@ -895,7 +897,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                             TriggerServerEvent('cs-adminmenu:usedFeature', 'spawned_car', car, el_plate)
 
-                            TriggerEvent('b-notify:notify', 'success', 'Admin Menu', 'Das Fahrzeug wurde erfolgreich gespawnt! Bitte beachte das Fahrzeug ist ein Temporäres')
+                            TriggerEvent("sanity:notify", "ADMINMENU", "Das gewünschte Auto wurde gespawnt - Bitte beachte dies ist ein Temporäres!", 5000,"success")
 
 
                             
@@ -928,7 +930,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                         SetVehicleUndriveable(GetVehiclePedIsIn(PlayerPedId(), false), false)
 
-                        TriggerEvent('b-notify:notify', 'success', 'Admin Menu', 'Fahrzeug erfolgreich repariert!')
+                        TriggerEvent("sanity:notify", "ADMINMENU", "Fahrzeug wurde erfolgreich Gewaschen & Reperiert", 5000,"success")
 
 
                     end
@@ -949,7 +951,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                         DeleteEntity(GetClosestVehicle(GetEntityCoords(PlayerPedId()), 3.0, 0, 0), false)
 
-                        TriggerEvent('b-notify:notify', 'success', 'Admin Menu', 'Fahrzeug erfolgreich gelöscht!')
+                        TriggerEvent("sanity:notify", "ADMINMENU", "Das Fahrzeug wurde erfolgreich entfernt", 5000,"success")
 
                         
 
@@ -991,7 +993,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                         DeleteEntity(GetClosestVehicle(GetEntityCoords(PlayerPedId()), 3.0, 0, 0), false)
 
-                        TriggerEvent('b-notify:notify', 'success', 'Admin Menu', 'Fahrzeug erfolgreich gelöscht!')
+                        TriggerEvent("sanity:notify", "ADMINMENU", "Das Fahrzeug wurde erfolgreich entfernt", 5000,"success")
                         
 
                     end
@@ -1026,7 +1028,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                             TriggerServerEvent('cs-adminmenu:managment', 'money', reason, amount)
 
-                            Notify('Geld Gesetzt!', amount)
+                            TriggerEvent("sanity:notify", "ADMINMENU", "+".. amount .."$" , 5000,"success")
 
                         end
 
@@ -1058,7 +1060,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                                 TriggerServerEvent('cs-adminmenu:managment', 'item', reason, what, amount)
 
-                                Notify('Item Erhalten', what..' '..amount..'x')
+                                TriggerEvent("sanity:notify", "ADMINMENU", "+".. amount .." " ..what.. "" , 5000,"success")
 
                             end
 
@@ -1092,7 +1094,7 @@ function RageUI.PoolMenus:El_Main_Menu()
 
                             if IsWeaponValid(GetHashKey(what)) then
 
-                                Notify('Waffe Erhalten', what)
+                                TriggerEvent("sanity:notify", "ADMINMENU", "+".. what .."" , 5000,"success")
 
                             end
 
