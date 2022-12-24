@@ -1,0 +1,1 @@
+B_SERVICE.Logs = "https://discordapp.com/api/webhooks/xxxxxxxxxxx/xxxxxxxxxxxxxxxxxxxxxx"

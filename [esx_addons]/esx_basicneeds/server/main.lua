@@ -4,9 +4,16 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 ESX.RegisterUsableItem('bread', function(source)
 
-		local zahl = math.random(1, 6)
-		TriggerEvent("rl:notify", "Würfel", "Du hast eine " ..zahl.. " gewürfelt", 0)
-	end)
+	local _source = source
+    local xPlayer = ESX.GetPlayerFromId(_source)
+
+	xPlayer.removeInventoryItem('bread', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
+	TriggerClientEvent('esx_basicneeds:onEat', source)
+	TriggerClientEvent("sanity:notify",source, "SYSTEM", "Du hast ein Brot gegessen!", 5000,"success")
+
+end)
 
 ESX.RegisterUsableItem('burger', function(source)
 
@@ -17,7 +24,7 @@ ESX.RegisterUsableItem('burger', function(source)
 
 	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('b_notify', source, "success", "System", "Du hast einen Bürger gegeseen!")
+	TriggerClientEvent("sanity:notify",source, "SYSTEM", "Du hast einen Bürger gegessen!", 5000,"success")
 
 end)
 
@@ -30,20 +37,7 @@ ESX.RegisterUsableItem('chips', function(source)
 
 	TriggerClientEvent('esx_status:add', source, 'hunger', 150000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('b_notify', source, "success", "System", "Du hast eine Tüte Chips gegeseen!")
-
-end)
-
-ESX.RegisterUsableItem('chips', function(source)
-
-	local _source = source
-    local xPlayer = ESX.GetPlayerFromId(_source)
-
-	xPlayer.removeInventoryItem('chips', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 150000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('b_notify', source, "success", "System", "Du hast eine Tüte Chips gegeseen!")
+	TriggerClientEvent("sanity:notify",source, "SYSTEM", "Du hast eine Tüte Chips gegessen!", 5000,"success")
 
 end)
 
@@ -56,7 +50,33 @@ ESX.RegisterUsableItem('apple', function(source)
 
 	TriggerClientEvent('esx_status:add', source, 'hunger', 150000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('b_notify', source, "success", "System", "Du hast einen Apfel gegeseen!")
+	TriggerClientEvent("sanity:notify",source, "SYSTEM", "Du hast einen Apfel gegessen!", 5000,"success")
+
+end)
+
+ESX.RegisterUsableItem('donut1', function(source)
+
+	local _source = source
+    local xPlayer = ESX.GetPlayerFromId(_source)
+
+	xPlayer.removeInventoryItem('donut1', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'hunger', 150000)
+	TriggerClientEvent('esx_basicneeds:onEat', source)
+	TriggerClientEvent("sanity:notify",source, "SYSTEM", "Du hast einen Donut gegessen!", 5000,"success")
+
+end)
+
+ESX.RegisterUsableItem('donut2', function(source)
+
+	local _source = source
+    local xPlayer = ESX.GetPlayerFromId(_source)
+
+	xPlayer.removeInventoryItem('donut2', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'hunger', 150000)
+	TriggerClientEvent('esx_basicneeds:onEat', source)
+	TriggerClientEvent("sanity:notify",source, "SYSTEM", "Du hast einen Donut gegessen!", 5000,"success")
 
 end)
 
@@ -69,7 +89,20 @@ ESX.RegisterUsableItem('water', function(source)
 
 	TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
 	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('b_notify', source, "success", "System", "Du hast eine Flasche Wasser getrunken!")
+	TriggerClientEvent("sanity:notify",source, "SYSTEM", "Du hast eine Flasche Wasser getrunken!", 5000,"success")
+
+end)
+
+ESX.RegisterUsableItem('choco', function(source)
+
+	local _source = source
+    local xPlayer = ESX.GetPlayerFromId(_source)
+
+	xPlayer.removeInventoryItem('water', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'choco', 200000)
+	TriggerClientEvent('esx_basicneeds:onDrink', source)
+	TriggerClientEvent("sanity:notify",source, "SYSTEM", "Du hast eine Tasse Kakao getrunken!", 5000,"success")
 
 end)
 
@@ -81,7 +114,7 @@ ESX.RegisterUsableItem('soda', function(source)
 
 	TriggerClientEvent('esx_status:add', source, 'thirst', 250000)
 	TriggerClientEvent('esx_optionalneeds:onDrink', source)
-	TriggerClientEvent('b_notify', source, "success", "System", "Du hast eine Dose Limonade getrunken!")
+	TriggerClientEvent("sanity:notify",source, "SYSTEM", "Du hast eine Dose Limonade getrunken!", 5000,"success")
 
 end)
 
@@ -93,7 +126,7 @@ ESX.RegisterUsableItem('kaffee', function(source)
 
 	TriggerClientEvent('esx_status:add', source, 'thirst', 250000)
 	TriggerClientEvent('esx_optionalneeds:onDrink', source)
-	TriggerClientEvent('b_notify', source, "success", "System", "Du hast einen Becher Kaffee getrunken!")
+	TriggerClientEvent("sanity:notify",source, "SYSTEM", "Du hast einen Becher Kaffee getrunken!", 5000,"success")
 
 end)
 
@@ -105,7 +138,7 @@ ESX.RegisterUsableItem('cocacola', function(source)
 
 	TriggerClientEvent('esx_status:add', source, 'drunk', 250000)
 	TriggerClientEvent('esx_optionalneeds:onDrink', source)
-	TriggerClientEvent('b_notify', source, "success", "System", "Du hast eine Dose Cola getrunken!")
+	TriggerClientEvent("sanity:notify",source, "SYSTEM", "Du hast eine Dose Cola getrunken!", 5000,"success")
 
 end)
 

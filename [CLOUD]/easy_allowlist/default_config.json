@@ -1,0 +1,30 @@
+{
+    "server": {
+        "mainIdentifier": "license",
+        "discordInvite": "",
+        "acePermission": "easy_allowlist",
+        "discordServerID": "",
+        "discordAllowlistRole": "",
+        "discordBotToken": "",
+        "serverBanner": "https://i.imgur.com/S3ccn2m.png",
+        "fastReconnectMinutes": 5,
+        "fastReconnectPriority": 10,
+        "enableDiscordRolesFeatures": false,
+        "discordRolesPriority": {},
+        "enableAllowlist": true,
+        "reservedSlots": {},
+        "showSendAllowlistRequestButton": true,
+        "areDiscordLogsActive": false,
+        "specificWebhooks": {},
+        "mainDiscordWebhook": "",
+        "minimumMinutesAfterStart": 0
+    },
+
+    "shared": {
+        "locale": "en"
+    }, 
+
+    "client": {
+
+    }
+}

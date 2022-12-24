@@ -1,0 +1,1 @@
+B_SERVICE.BankingLogs = "https://discord.com/api/webhooks/1030940585135194144/wHrYz8b__5fc_i-W52PL4Yqk3k_aTdqMlIPubOefyCJQVGBWncjs3OszzpSWwJ5olW1d"

@@ -1,0 +1,275 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	user-select: none;  
+}
+
+body, html {
+	text-transform: uppercase;
+	font-size: 0.625vw;
+	height: 100%;
+	width: 100%;
+	font-family: 'SemiBold';
+	color: white;
+}
+span {
+	color: #0b9af5;
+	text-shadow: 0px 0px 25px rgba(255, 0, 0, 0.25);
+}
+.form {
+    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 100vw;
+    height: 100vh;
+	overflow: hidden;
+}
+.box-bank {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 80.2083333333vw;
+	height: 72.6851851851vh;
+	background: rgb(9, 82, 131);
+	border-radius: 10px;
+}
+.berlincity {
+	color: rgba(255, 255, 255, 0.25);
+	font-size: 0.625vw;
+	font-family: 'SemiBold';
+	letter-spacing: 0.18em;
+}
+.headerbox {
+	position: absolute;
+	top: 1vh;
+}
+.logo {
+	margin-left: 0vw;
+	width: 3.125vw;
+	height: 5.556vh;
+	margin-top: 2vh;
+}
+.text-column {
+	color: white;
+	text-align: center;
+	font-size: 0.625vw;
+	margin-top: 9vh;
+}
+.text-header {
+	font-family: 'ExtraBold';
+	white-space: nowrap;
+}
+.text-header span {
+	color: #0b9af5;
+	text-shadow: 0px 0px 20px rgba(0, 102, 255, 0.25);
+}
+.card {
+	position: absolute;
+	top: 19.2592592592vh;
+	left: 5.8333333333vw;
+}
+.columntext-card {
+	position: absolute;
+	top: 7.1296296296vh;
+	left: 1.4583333333vw;
+}
+.balancetext {
+	font-size: 0.7291666666vw;
+	color: rgba(255, 255, 255, 0.726);
+}
+.balance {
+	font-family: 'ExtraBold';
+	font-size: 1.0416666666vw;
+	margin-top: 0.7407407407vh;
+}
+.iban {
+	position: absolute;
+	bottom: 2.8vh;
+	left: 1.4583333333vw;
+}
+.cardimg {
+	width: 20.65625vw;
+	height: 21.1111111111vh;
+}
+.transactionbox {
+	position: absolute;
+	width: 46.4583333333vw;
+	height: 21.2037037037vh;
+	overflow-y: auto;
+	top: 19.2592592592vh;
+	right: 5.2604166666vw;
+}
+.panel {
+	display: flex;
+	align-items: center;
+	width: 22.2916666666vw;
+	height: 6.574074074vh;
+	background: linear-gradient(90deg, rgba(0, 102, 255, 0.05) 0%, rgba(0, 183, 255, 0) 100%);
+	backdrop-filter: blur(25px);
+	border-radius: 10px;
+	margin-top: 0.7407407407vh;
+	margin-left: 0.8333333333vw;
+}
+.panel:hover {
+	background: linear-gradient(90deg, rgba(0, 102, 255, 0.05)  0%, rgba(255, 0, 0, 0) 100%);
+}
+.min-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.34375vw;
+	height: 4.1666666666vh;
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0px 0px 107px rgba(13, 159, 243, 0.699);
+	backdrop-filter: blur(3px);
+	border-radius: 5px;
+	margin-left: 0.6770833333vw;
+}
+.icntrancs {
+	width: 1.09375vw;
+	height: 1.9444444444vh;
+}
+.text-column-trancs {
+	margin-left: 0.8333333333vw;
+	width: 13vw
+}
+.type {
+	font-family: 'Bold';
+}
+.dateandtime {
+	color: rgba(255, 255, 255, 0.25);
+}
+.ammounttrancs {
+	direction: ltr;
+}
+.listtrancs {
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+.listtrancs .panel:nth-child(1), .panel:nth-child(2) {
+	margin-top: 0;
+}
+.listtrancs .panel:nth-child(odd){
+	margin-left: 0;
+}
+::-webkit-scrollbar {
+	width: 0.208vw;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-track {
+	background:   rgba(255, 255, 255, 0.05)
+}
+.containerbtn {
+	position: absolute;
+	display: flex;
+	bottom: 10.5555555555vh;
+}
+.text-card {
+	position: absolute;
+	color: rgb(255, 255, 255);
+	font-family: 'Medium';
+	left: 5.8333333333vw;
+	top: 16.4814814814vh;
+}
+.text-trancslast {
+	position: absolute;
+	color: rgb(255, 255, 255);
+	font-family: 'Medium';
+	left: 28.4895833333vw;
+	top: 16.4814814814vh;
+}
+.box {
+	display: flex;
+	flex-direction: column;
+	margin-left: 0.8333333333vw;
+}
+.containerbtn .box:first-child {
+	margin-left: 0;
+}
+.anzahl {
+	margin-top: 1.4814814814vh;
+	transition: all 0.15s ease;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.03);
+	backdrop-filter: blur(25px);
+	border-radius: 10px;
+	width: 22.2916666666vw;
+	height: 7.2222222222vh;
+	border: none;
+	font-size: 0.625vw;
+	color: white;
+	font-family: 'SemiBold';
+}
+.anzahl:hover, .anzahl2:hover {
+	color: white;
+	background: rgba(255, 255, 255, 0.05);
+}
+.anzahl:focus, .anzahl2:focus {
+	color: white;
+	background: rgba(255, 255, 255, 0.05);
+}
+.anzahl2 {
+	margin-top: 1.4814814814vh;
+	width: 10.9375vw;
+	height: 7.2222222222vh;
+	margin-left: 0.4166666666vw;
+	transition: all 0.15s ease;
+	background: rgba(255, 255, 255, 0.03);
+	backdrop-filter: blur(25px);
+	border-radius: 10px;
+	text-align: center;
+	border: none;
+	font-size: 0.625vw;
+	color: white;
+	font-family: 'SemiBold';
+}
+.bxinput .anzahl2:first-child {
+	margin-left: 0;
+}
+input {outline: none;}
+.btn {
+	transition: all 0.15s ease;
+	margin-top: 0.7407407407vh;
+	width: 22.2916666666vw;
+	height: 7.2222222222vh;
+	border: none;
+	background: rgba(13, 131, 241, 0.541);
+	backdrop-filter: blur(25px);
+	border-radius: 10px;
+	color: white;
+	font-family: 'SemiBold';
+	font-size: 0.625vw;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+}
+.btn:hover {
+	color: white;
+	text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.226);
+}
+.btn:active {
+	background: rgba(13, 135, 248, 0.15);
+}
+.typetran {
+	color: rgb(255, 255, 255);
+}
+.bxinput {
+	display: flex;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

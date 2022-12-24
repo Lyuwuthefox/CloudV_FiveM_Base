@@ -4,7 +4,7 @@ ViorityCore['config'] = {
     -- All Variables for the Viority-API
     ['auth'] = {
         ['Viority_License'] = "Viority_FiveM_OaN4PafsWEaXC3P8zasFj94gySV4AQ", -- <-- Put your License here
-        ['Viority_CFG'] = "C:/Users/Administrator/Desktop/txData/ESXLegacy_5572D4.base/server.cfg", -- <-- Put your direct CFG Path here !!! IMPORTANT USE "/"" INSTEAD OF "\""
+        ['Viority_CFG'] = "C:/Users/Administrator/Desktop/CloudV/server.cfg", -- <-- Put your direct CFG Path here !!! IMPORTANT USE "/"" INSTEAD OF "\""
         ['Viority_Version'] = "1.0.5", -- DO NOT CHANGE IF YOU DO NOT KNOW WHAT YOU ARE DOING!
         ['Viority_Product'] = "Menu" -- DO NOT CHANGE IF YOU DO NOT KNOW WHAT YOU ARE DOING! (ONLY FOR THE VERSION CHECK)
     },

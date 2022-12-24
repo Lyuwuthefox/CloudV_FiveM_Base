@@ -1,0 +1,152 @@
+<html>
+<script src="JS/jquery-3.5.1.min.js">
+</script>
+<!-- <script src="https://kit.fontawesome.com/c9268134f7.js" crossorigin="anonymous"></script> -->
+<script src="https://kit.fontawesome.com/ddcc130b4a.js" crossorigin="anonymous"></script>
+<head>
+    <title>Shino X-Menü by Zyp</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <img class="back2" src="https://cdn.discordapp.com/attachments/966469958450176030/966472095129301022/Background.png">
+
+    <div class="Main">
+        <div class="Wheel-Core">
+            <div class="Back-Glow"></div>
+            <div class="Back-Glow-2"></div>
+            <div class="Logo-Container">
+                <img class="Logo" src="https://media.discordapp.net/attachments/1043987240856064101/1051905875813605456/dfc72fd5e0a80c85.png">
+                <!-- <img class="Logo-GLow" src="img/Logo.png"> -->
+            </div>
+
+            <ul class="Menu">
+                <div class="Spread">
+                    <div class="Unit-Container">
+                        <div class="Unit Unit-Trunk" onclick="onClick('takeHostage');">
+                            <div class="Unit-Border"></div>
+                            <!-- <div class="Unit-Side-Border"></div> -->
+                            <div class="Unit-Glow">
+                                <div class="Unit-Border"></div>
+                            </div>
+                            <i class="fa-solid fa-gun Unit-Icon"></i>
+                            <div class="Unit-Text">Geisel</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Spread">
+                    <div class="Unit-Container">
+                        <div class="Unit Unit-Search" onclick="onClick('searchPlayer');">
+                            <div class="Unit-Border"></div>
+                            <!-- <div class="Unit-Side-Border"></div> -->
+                            <div class="Unit-Glow">
+                                <div class="Unit-Border"></div>
+                            </div>
+                            <i class="fa-solid fa-magnifying-glass Unit-Icon"></i>
+                            <div class="Unit-Text">Durchsuchen</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Spread">
+                    <div class="Unit-Container">
+                        <div class="Unit Unit-Handcuffs" onclick="onClick('cuff');">
+                            <div class="Unit-Border"></div>
+                            <!-- <div class="Unit-Side-Border"></div> -->
+                            <div class="Unit-Glow">
+                                <div class="Unit-Border"></div>
+                            </div>
+                            <i class="fa-solid fa-handcuffs Unit-Icon"></i>
+                            <div class="Unit-Text">Fesseln</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Spread">
+                    <div class="Unit-Container">
+                        <div class="Unit Unit-ID" onclick="onClick('showIdCard');">
+                            <div class="Unit-Border"></div>
+                            <!-- <div class="Unit-Side-Border"></div> -->
+                            <div class="Unit-Glow">
+                                <div class="Unit-Border"></div>
+                            </div>
+                            <i class="fa-solid fa-address-card Unit-Icon"></i>
+                            <div class="Unit-Text">
+                                <div class="DL-Text">Ausweis</div>
+                                <div class="DL-Text">geben</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Spread">
+                    <div class="Unit-Container">
+                        <div class="Unit Unit-Inv" onclick="onClick('giveMoney');">
+                            <div class="Unit-Border"></div>
+                            <!-- <div class="Unit-Side-Border"></div> -->
+                            <div class="Unit-Glow">
+                                <div class="Unit-Border"></div>
+                            </div>
+                            <i class="fa-solid fa-hand-holding-dollar Unit-Icon"></i>
+
+                            <div class="Unit-Text">
+                                <div class="DL-Text">Geld</div>
+                                <div class="DL-Text">Geben</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Spread">
+                    <div class="Unit-Container">
+                        <div class="Unit Unit-CarLock" onclick="onClick('carlock');">
+                            <div class="Unit-Border"></div>
+                            <!-- <div class="Unit-Side-Border"></div> -->
+                            <div class="Unit-Glow">
+                                <div class="Unit-Border"></div>
+                            </div>
+                            <div class="ExtraData">
+                                <div class="ExtraData-IsCarLocked">1</div>
+                            </div>
+
+                            <i class="fa-solid fa-lock Unit-Icon"></i>
+                            <div class="Unit-Text">Car Lock</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Spread">
+                    <div class="Unit-Container">
+                        <div class="Unit Unit-Stabilis" onclick="onClick('stabilize-engine');">
+                            <div class="Unit-Border"></div>
+                            <!-- <div class="Unit-Side-Border"></div> -->
+                            <div class="Unit-Glow">
+                                <div class="Unit-Border"></div>
+                            </div>
+                            <i class="fa-solid fa-heart-pulse Unit-Icon"></i>
+                            <i class="fa-solid fa-engine Unit-Icon" style="display: none;"></i>
+                            <div class="Unit-Text engineText">Stabilisieren</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Spread">
+                    <div class="Unit-Container">
+                        <div class="Unit Unit-Exit" onclick="onClick('close');">
+                            <div class="Unit-Border"></div>
+                            <!-- <div class="Unit-Side-Border"></div> -->
+                            <div class="Unit-Glow">
+                                <div class="Unit-Border"></div>
+                            </div>
+                            <i class="fa-solid fa-arrow-right-from-bracket Unit-Icon"></i>
+                            <div class="Unit-Text">Schließen</div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD `iban` VARCHAR(128) NOT NULL DEFAULT 'none'

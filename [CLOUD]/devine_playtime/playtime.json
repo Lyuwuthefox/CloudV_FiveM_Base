@@ -1,12 +1,37 @@
 {
-    "license:dcb94f816b31c4e2e6f6a8545cd9a53bfc1c95e8": {
-        "lastUpdate": 1670747887,
-        "name": "Larissa_Summer",
-        "playtime": 294
+    "license:ead564da5f622fed741a86224ece2c9cdfd362eb": {
+        "name": "Soeren_Soeren",
+        "playtime": 268,
+        "lastUpdate": 1671642304
+    },
+    "license:352dab21651b1f0975700c6b1677d63163ad341a": {
+        "name": "Nick_Koch",
+        "playtime": 27,
+        "lastUpdate": 1671141454
     },
     "license:7b4cd266e643872cc9466eac99a6703354983bfe": {
-        "lastUpdate": 1670630511,
-        "name": "Fynn Mustermann",
-        "playtime": 108
+        "name": "Fynn_Mustermann",
+        "playtime": 456,
+        "lastUpdate": 1671751237
+    },
+    "license:a8f0bbaed08fef7141a12728011f375a4ba198db": {
+        "name": "Ahmad_Abdullah",
+        "playtime": 19,
+        "lastUpdate": 1671856689
+    },
+    "license:dcb94f816b31c4e2e6f6a8545cd9a53bfc1c95e8": {
+        "name": "Larissa_Summer",
+        "playtime": 2709,
+        "lastUpdate": 1671856688
+    },
+    "license:8f067a0411baf1bbe731f12ca4a4f75986efde64": {
+        "name": "Max_Mustermann",
+        "playtime": 40,
+        "lastUpdate": 1671391194
+    },
+    "license:0cf1a404d28b7438caa5e26a42da69cac335a6c8": {
+        "name": "Niklas_Butterkuchen",
+        "playtime": 175,
+        "lastUpdate": 1671416099
     }
 }

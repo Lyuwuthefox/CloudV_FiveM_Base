@@ -27,7 +27,7 @@ body, html {
 	justify-content: center;
 	width: 55.521vw;
 	height: 77.500vh;
-	background: rgba(12, 0, 0, 0.93);
+	background: rgba(0, 4, 12, 0.93);
 	border-radius: 10px;
 }
 .headerbox {
@@ -50,25 +50,25 @@ body, html {
 	white-space: nowrap;
 }
 .text-header span {
-	color: red;
-	text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.5);
+	color: 0b9af5;
+	text-shadow: 0px 0px 20px rgba(0, 153, 255, 0.5);
 }
 .berlincity {
-	color: rgba(255, 255, 255, 0.25);
+	color: rgb(255, 255, 255);
 	font-size: 0.625vw;
 	margin-top: 0.3vh;
 	font-family: 'SemiBold';
 	letter-spacing: 0.14em;
 }
 .text-red  {
-	color: red;
+	color: #0b9af5;
 }
 .text-two {
 	font-family: 'SemiBold';
-	color: rgba(255, 255, 255, 0.25);
+	color: rgb(255, 255, 255);
 }
 .text-color {
-	color: white;
+	color: #0b9af5;
 }
 .man-bg {
 	position: absolute;
@@ -156,13 +156,13 @@ input {outline:none;}
 .selected {
 	text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
 	color: white;
-	background: linear-gradient(90deg, rgba(255, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(90deg, rgba(0, 110, 255, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .btn:hover:not(.selected) {
 	text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
 	color: white;
-	background: linear-gradient(90deg, rgba(255, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(90deg, rgba(0, 132, 255, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .button-box .btn:first-child {
@@ -176,18 +176,18 @@ input {outline:none;}
 	width: 18.021vw;
 	height: 6.759vh;
 	margin-top: 1.852vh;
-	background: linear-gradient(90deg, rgba(255, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(90deg, rgba(0, 132, 255, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
 	border-radius: 4px;
 	border: none;
 }
 .button-done:hover {
 	text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
 	color: white;
-	background: linear-gradient(90deg, rgba(255, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
-	box-shadow: -40px 0px 75px rgba(255, 0, 0, 0.15);
+	background: linear-gradient(90deg, rgba(0, 132, 255, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+	box-shadow: -40px 0px 75px rgba(0, 132, 255, 0.15);
 }
 .button-done:active {
-	background: linear-gradient(90deg, rgba(255, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(90deg, rgba(0, 140, 255, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

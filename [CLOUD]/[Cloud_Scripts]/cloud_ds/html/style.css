@@ -1,0 +1,128 @@
+body {
+	user-select: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+	* {
+		font-family: 'Poppins';
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+
+	.main_container {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: var(--containerfarbe);
+	}
+	.header {
+		position: absolute;
+		width: 50vw;
+		top: 17vw;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	p, .timer {
+		position: absolute;
+		left: 50%;
+		top: 28vw;
+		transform: translate(-50%);
+		color: var(--text);
+		font-size: 0.8vw;
+		font-weight: 900;
+	} 
+	.timer {
+		top: 29vw;
+		font-size: 1.2vw;
+		color: var(--serverfarbe);
+	}
+
+	.pbar_bg, .pbar {
+		position: absolute;
+		left: 50%;
+		top: 31vw;
+		transform: translate(-50%);
+		width: 10vw;
+		height: 1vw;
+		border-radius: 1vw;
+	}
+	.pbar_bg {
+		background: linear-gradient(180deg,rgba(27, 27, 27, 1) 0%,rgba(0, 0, 0, 1) 100%);
+		width: 12vw;
+		opacity: 40%;
+	}
+	.pbar {
+		left: 50%;
+		top: 31.15vw;
+		background: linear-gradient(45deg, var(--containerfarbe), 10%, var(--serverfarbe) 100%);
+		width: 11vw;
+		height: 0.6vw;
+	}
+
+	.buttons {
+		position: absolute;
+		color: var(--text);
+		left: 50%;
+		top: 84%;
+		transform: translate(-50%);
+	}
+	.E, .U, .G {
+		font-size: 2.4vw;
+	}
+	.E-text, .U-text, .G-text {
+		position: absolute;
+		font-size: 0.7vw;
+		opacity: 50%;
+		left: 50%;
+		transform: translate(-50%);
+		text-align: center;
+		width: 9vw;
+		top: 3vw;
+	}
+	.E-container {
+		position: absolute;
+		left: -20vw;
+	}
+	.G-container {
+		position: absolute;
+		left: 0vw;
+		top: -3vw;
+	}
+	.U-container {
+		position: absolute;
+		left: 20vw;
+	}
+
+	.U-dreieck, .E-dreieck, .G-dreieck {
+		position: absolute;
+		top: 6vw;
+		width: 0vw;
+		height: 0vw;
+		border-top: 1vw solid var(--serverfarbe);
+		border-right: 1vw solid transparent;
+		border-bottom: 1vw solid transparent;
+		border-left: 1vw solid transparent;
+	  }
+	  .blurr1, .blurr2 {
+		position: absolute;
+		top: -10vw;
+		left: -12vw;
+		width: 40vw;
+		height: 40vw;
+		background-color: var(--serverfarbe);
+		border-radius: 50%;
+		filter: blur(30vw);
+	  }
+	  .blurr2 {
+		top: 40vw;
+		left: 58vw;
+	  }
+	  
+/* Designed by cxlxn */

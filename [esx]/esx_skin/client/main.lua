@@ -65,7 +65,7 @@ function OpenMenu(submitCb, cancelCb, restrict)
 
         ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'skin', {
             title = TranslateCap('skin_menu'),
-            align = 'bottom-left',
+            align = 'right',
             elements = elements
         }, function(data, menu)
             TriggerEvent('skinchanger:getSkin', function(skin) lastSkin = skin end)
@@ -205,9 +205,9 @@ CreateThread(function()
 
         if isCameraActive then
             sleep = 0
-            if IsControlPressed(0, 209) then
+            if IsControlPressed(0, 47) then
                 angle = angle - 1
-            elseif IsControlPressed(0, 19) then
+            elseif IsControlPressed(0, 74) then
                 angle = angle + 1
             end
 

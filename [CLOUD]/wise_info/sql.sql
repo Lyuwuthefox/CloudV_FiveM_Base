@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD COLUMN `discord` VARCHAR(50) NULL AFTER `identifier`;

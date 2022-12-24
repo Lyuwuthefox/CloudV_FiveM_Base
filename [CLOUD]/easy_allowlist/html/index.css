@@ -1,0 +1,41 @@
+.clickable:hover {
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition-duration: 100ms;
+}
+
+.clickable:not(:hover) {
+    transition-duration: 100ms;
+}
+
+.accept-deny-button {
+    font-size: 1.8rem;
+}
+
+#not-allowed-container {
+    background-color: #222;
+
+    color: white;
+
+    width: 50%;
+
+    top: 30%;
+    left: 25%;
+
+    position: absolute;
+
+    display: none;
+}
+
+#easy-allowlist-version {
+    line-height: 10vh;
+
+    width: max-content;
+
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-teal {
+    color: "red";
+}

@@ -18,22 +18,22 @@ Devine.Notify = function(src, type, msg)
 end
 
 Devine.Cooldown = 2500 -- 2.5 Seconds
-Devine.Fetch = 10 -- Fetch top 10 Players
+Devine.Fetch = 5 -- Fetch top 10 Players
 Devine.playtimeCmd = 'playtime'
 
 Devine.Webhook = {
-    Username = 'PLAYTIME',
-    Title = 'Devine | Playtime',
-    Color = 3092790, -- https://www.mathsisfun.com/hexadecimal-decimal-colors.html
-    Logo = 'https://cdn.discordapp.com/attachments/967536716401475616/1043916550589141133/Group_23.png',
-    Footer = 'Devine | Playtime',
+    Username = 'Top 5 Aktivste Spieler',
+    Title = 'Cloud V',
+    Color = 760565, -- https://www.mathsisfun.com/hexadecimal-decimal-colors.html
+    Logo = 'https://media.discordapp.net/attachments/1043987240856064101/1052832711552802826/Aysa.gif',
+    Footer = 'Cloud V | Playtime',
 
     MsgLayout = '**#%s** | %s | %s',
 
     Settings = {
         Enabled = true,
-        Webhook = 'WEBHOOK HERE',
-        frequency = 50 * 60000 -- 50 Minutes
+        Webhook = 'https://discord.com/api/webhooks/1053734459549171822/kP8skQozvoodooqLNwrggRsy-7kFWSgcA1PhB5_so_dyIccAA56Ew0DACoRQc_eGd9dr',
+        frequency = 900 * 60000 -- 50 Minutes
     }
 
 }

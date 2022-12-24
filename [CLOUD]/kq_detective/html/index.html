@@ -1,0 +1,220 @@
+<head>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</head>
+<body>
+<div class="notepad draggable">
+    <div id="marker" class="marker"></div>
+    <div class="main-text">
+        <p><span id="l-time-of-death">Time of death: </span><span class="autoWrite-300-1000" id="data-time"></span> <span class="autoWrite-100-1700" id="extra-time"></span></p>
+        <p><span id="l-cause-of-death">Cause of death: </span><span id="data-cause" class="autoWrite-150-4000"></span></p>
+        <p><span id="l-area">Area of impact: </span><span id="data-area" class="autoWrite-150-7000"></span></p><br>
+        <p class="is-weapon"><span id="l-weapon-type">Weapon type used: </span><span id="data-weapon-type" class="autoWrite-50-9000"></span></p>
+        <p class="is-weapon"><span id="l-weapon-model">Weapon model used: </span><span id="data-weapon-name" class="autoWrite-50-10000"></span></p>
+        <p class="is-vehicle"><span id="l-vehicle">Vehicle class: </span><span id="data-vehicle-class" class="autoWrite-200-10500"></span></p>
+    </div>
+</div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        let finished = false;
+        const timeouts = [];
+
+        let minuteAgo = 'minute ago';
+        let minutesAgo = 'minutes ago';
+        let murder = 'Murder';
+
+        $('.draggable').draggable({
+            preventCollision: true,
+            containment: 'body',
+            cancel: '.noDrag'
+        });
+
+
+        window.addEventListener('message', ({data}) => {
+            if (data.event === 'show') {
+                if (data.state) {
+                    $('body').fadeIn(300);
+                    
+                    finished = false;
+
+                    $('#data-time').html(data.time);
+                    if (data.time === 1) {
+                        $('#extra-time').html(minuteAgo);
+                    } else {
+                        $('#extra-time').html(minutesAgo);
+                    }
+
+                    $('#data-cause').html(data.cause);
+                    $('#data-area').html(data.area);
+
+                    $('#data-weapon-type').html(data.weaponType);
+                    $('#data-weapon-name').html(data.weaponName);
+                    if (data.isWeapon || data.cause === murder) {
+                        $('.is-weapon').show()
+                    } else {
+                        $('.is-weapon').hide()
+                    }
+
+                    if (data.vehicleClass && data.vehicleClass !== 'NULL' && !data.vehicleClass.includes('undefined') && data.vehicleClass.length >= 3) {
+                        $('.is-vehicle').show();
+                        $('#data-vehicle-class').html(data.vehicleClass);
+                    } else {
+                        $('.is-vehicle').hide();
+                    }
+
+                    if (data.area !== 'Unknown') {
+                        const marker = $('#marker');
+
+                        marker.hide();
+                        if (data.boneTop > 0 && data.boneLeft > 0) {
+                            marker.css('top', data.boneTop + 'vh');
+                            marker.css('left', data.boneLeft + 'vh');
+
+                            const timeout2 = setTimeout(function(){
+                                marker.fadeIn(300);
+                            }, 11000)
+                            timeouts.push(timeout2);
+                        }
+
+                        const timeout = setTimeout(function(){
+                            finished = true;
+                        }, 8000)
+
+                        timeouts.push(timeout);
+                    } else {
+                        $('#marker').hide();
+                    }
+
+                    $("[class*=autoWrite]").each(function(e){
+                        autoWriteText($(this));
+                    });
+                } else {
+                    $('body').fadeOut(300);
+
+                    timeouts.forEach((timeout) => {
+                        clearTimeout(timeout);
+                    })
+                }
+            } else if (data.event === 'set-locale') {
+                const suffix = ': ';
+
+                $('#l-time-of-death').html(data.timeOfDeath + suffix);
+                $('#l-cause-of-death').html(data.causeOfDeath + suffix);
+                $('#l-area').html(data.area + suffix);
+                $('#l-weapon-type').html(data.weaponType + suffix);
+                $('#l-weapon-model').html(data.weaponModel + suffix);
+                $('#l-vehicle').html(data.vehicle + suffix);
+
+                minuteAgo = data.minute;
+                minutesAgo = data.minutes;
+                murder = data.murder;
+            }
+        });
+
+        function autoWriteText(elm){
+            let clas = elm.attr("class");
+            clas = clas.split("-");
+            const speed = clas[1];
+            const delay = clas[2];
+            let txt = elm.html();
+            elm.html("");
+            const timeout = setTimeout(function(){
+                elm.fadeIn("fast");
+                txt = txt.split("");
+                let txtI = 0;
+                let html = "";
+                let intrvl = setInterval(function(){
+                    html = html + txt[txtI] ;
+                    elm.html(html);
+                    txtI = txtI + 1;
+                    if(txtI === txt.length){
+                        clearInterval(intrvl);
+                    }
+
+                },speed);
+            },delay)
+
+            timeouts.push(timeout);
+        }
+
+        document.addEventListener('keyup', logKey);
+
+        function logKey(e) {
+            if (e.key === 'Escape' || e.key === 'Backspace' || e.key === 'e' || e.key === ' ') {
+                fetch(`https://kq_detective/CloseNotepad`, {
+                    method: 'POST',
+                })
+            }
+        }
+
+        fetch(`https://kq_detective/UILoaded`, {
+            method: 'POST',
+        });
+    });
+</script>
+
+<style>
+    @font-face {
+        font-family: Pen;
+        src: url('fonts/pen.otf') format('opentype');
+    }
+
+    body {
+        font-family: Pen, sans-serif !important;
+        font-weight: bold;
+        user-select: none;
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .notepad {
+        background-image: url('img/notepad.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40vh;
+        height: 57vh;
+        left: calc(85% - (42vh / 2));
+        top: calc(50% - (22vh / 2));
+        position: relative;
+    }
+
+    .main-text {
+        padding: 6vh 4vh 4vh;
+        font-size: 2.1vh;
+        line-height: 1vh;
+        color: #191e36;
+        opacity: 0.92;
+    }
+
+    .marker {
+        background-image: url('img/marker.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 6.5vh;
+        height: 6.5vh;
+        left: 20vh;
+        top: 30vh;
+        position: absolute;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: transparent;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 100%;
+    }
+</style>

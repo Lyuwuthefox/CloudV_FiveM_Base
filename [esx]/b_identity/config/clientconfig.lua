@@ -6,7 +6,7 @@ B_SERVICE.SharedObject = {
 }
 
 B_SERVICE.Title = "CHARAKTER <span>ERSTELLUNG</span>"
-B_SERVICE.Subtitle = "BERLIN CITY"
+B_SERVICE.Subtitle = "Cloud V"
 
 B_SERVICE.DeathEvent = "esx:onPlayerDeath"
 B_SERVICE.SpawnEvent = "playerSpawned"

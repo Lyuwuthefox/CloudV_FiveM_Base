@@ -1,132 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+[class~=dialog] input[type="text"],
+.dialog h2 {
+	text-align: center;
+}
 
-#controls {
-	font-family: montserrat;
-	font-size: 3em;
-	color: #FFF;
-	position: absolute;
-	bottom: 40;
-	right: 40;
+[class~=dialog] input[type="text"] {
+	width: 60.5%;
+}
+
+[class~=dialog] input[type="text"],
+[class~=dialog] button[name="submit"] {
+	height: .25in;
 }
 
 .controls {
 	display: none;
 }
 
-.dialog {
-	font-family: montserrat;
-	background: rgba(33, 33, 33, 0.8);
-  color: #fff;
-	position: absolute;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	overflow: hidden;
-	top: 50%;
-	left: 50%;
-	width: 600px;
-	height: 152px;
-	transform: translate(-50%, -50%);
+[class~=dialog] input[type="text"] {
+	outline: 0;
 }
 
-.head {
-	display: flex;
-	flex-basis: 100%;
-	align-items: center;
-	color: #fff;
+[class~=dialog] input[type="text"] {
+	background: rgba(0, 0, 0, .5);
+}
+
+html {
+	font-size: .052083333in;
+}
+
+[class~=dialog] input[type="text"] {
+	margin-top: 0pc;
+}
+
+[class~=dialog] button[name="submit"],
+[class~=dialog] input[type="text"] {
+	margin-left: 4.6875pc;
+}
+
+[class~=dialog] input[type="text"] {
+	transition: all .2s ease-in-out;
+}
+
+.dialog h2 {
+	font-size: .9375pc;
+}
+
+[class~=dialog] input[type="text"] {
+	color: white;
+}
+
+[class~=dialog] input[type="text"] {
+	border-left-width: medium;
+}
+
+[class~=dialog] input[type="text"] {
+	border-bottom-width: medium;
+}
+
+[class~=dialog] input[type="text"] {
+	border-right-width: medium;
+}
+
+[class~=dialog] input[type="text"] {
+	border-top-width: medium;
+}
+
+[class~=dialog] input[type="text"] {
+	border-left-style: none;
 }
 
 .dialog.big {
-	height: 200px;
+	height: 112.5pt;
 }
 
-.dialog .head {
-	background: rgba(25, 25, 25, 0.9);
-	text-align: center;
-	height: 40px;
+[class~=dialog] input[type="text"] {
+	border-bottom-style: none;
 }
 
-.dialog .head span::before {
-	content: "";
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
+.dialog h2,
+[class~=dialog] button[name="submit"] {
+	text-transform: uppercase;
 }
 
-.dialog input[type="text"] {
-	width: 60%;
-	height: 32px;
-  outline: 0;
-  background: none;
-  text-align: center;
-  margin-top: 26px;
-  margin-left: 125px;
-	font-size: large;
-  transition: all 0.2s ease-in-out;
-  color: white;
-  border: 0.5px solid #ffffff3b;
-  border-radius: 0px;
+[class~=dialog] input[type="text"] {
+	border-right-style: none;
 }
 
-.dialog input[type="text"]:active, .dialog input[type="text"]:hover {
-  color: white;
+[class~=dialog] input[type="text"] {
+	border-top-style: none;
 }
 
-.dialog textarea {
+[class~=dialog] input[type="text"] {
+	border-left-color: currentColor;
+}
+
+[class~=dialog] input[type="text"] {
+	border-bottom-color: currentColor;
+}
+
+.dialog h2 {
+	letter-spacing: .005208333in;
+}
+
+.dialog {
+	font-family: "Montserrat", "Lato";
+}
+
+.dialog {
+	background: radial-gradient(farthest-side at bottom left, #03163d, transparent), radial-gradient(farthest-corner at bottom right, #0b9af5, transparent 400px), radial-gradient(farthest-corner at top right, #0b9af5, rgba(0, 0, 0, .5));
+}
+
+[class~=dialog] input[type="text"] {
+	border-right-color: currentColor;
+}
+
+[class~=dialog] input[type="text"] {
+	border-top-color: currentColor;
+}
+
+[class~=dialog] input[type="text"] {
+	border-image: none;
+}
+
+[class~=dialog] input[type="text"],
+[class~=dialog] button[name="submit"] {
+	border-radius: .03125pc;
+}
+
+.dialog button[name="cancel"],
+[class~=dialog] button[name="submit"] {
+	background: linear-gradient(90deg, #0b9af5 0%, #0b9af5 100%);
+}
+
+.dialog button[name="cancel"],
+[class~=dialog] button[name="submit"] {
+	font-size: .625pc;
+}
+
+[class~=dialog] button[name="submit"] {
+	width: 35.5%;
+}
+
+[class~=dialog] textarea {
 	width: 100%;
-	height: 128px;
 }
 
-.dialog button[name="submit"] {
-	width: 17.6%;
-	height: 32px;
-  margin-left: 160px;
-  font-weight: 300;
-  color: rgb(37, 34, 53);
-	border-radius: 10px;
-  text-transform: uppercase;
-  background: rgb(50, 79, 208);
-  outline: 0;
-  border: none;
-  transition: all 0.2s ease-in-out;
+#controls,
+.dialog {
+	color: #fff;
 }
 
-.dialog button {
-  z-index: 9999;
+[class~=dialog] textarea {
+	height: 96px;
+}
+
+.dialog,
+#controls {
+	position: absolute;
+}
+
+.dialog {
+	overflow: hidden;
+}
+
+#controls {
+	font-size: 2.25em;
+}
+
+[class~=dialog] button[name="submit"] {
+	font-weight: 300;
+}
+
+[class~=head]::before,
+[class~=dialog] [class~=head] span::before {
+	content: "";
+}
+
+[class~=dialog] button[name="submit"],
+.dialog button[name="cancel"] {
+	color: #ccc;
+}
+
+[class~=dialog] button[name="submit"] {
+	line-height: 1.5625pc;
+}
+
+[class~=dialog] button[name="submit"] {
+	border-left-width: medium;
+}
+
+[class~=dialog] button[name="submit"] {
+	border-bottom-width: medium;
+}
+
+[class~=dialog] button[name="submit"] {
+	border-right-width: medium;
+}
+
+[class~=dialog] button {
+	z-index: 9999;
+}
+
+[class~=dialog] button[name="submit"] {
+	border-top-width: medium;
+}
+
+[class~=dialog] button[name="submit"] {
+	border-left-style: none;
+}
+
+[class~=dialog] button[name="submit"] {
+	border-bottom-style: none;
+}
+
+[class~=dialog] button[name="submit"] {
+	border-right-style: none;
+}
+
+[class~=dialog] button[name="submit"] {
+	border-top-style: none;
+}
+
+.dialog {
+	top: 50%;
+}
+
+[class~=dialog] button[name="submit"] {
+	border-left-color: currentColor;
+}
+
+[class~=dialog] button[name="submit"] {
+	border-bottom-color: currentColor;
+}
+
+[class~=dialog] button[name="submit"] {
+	border-right-color: currentColor;
+}
+
+[class~=dialog] button {
 	transform: translate(-0%, 50%);
 }
 
+[class~=dialog] button[name="submit"] {
+	border-top-color: currentColor;
+}
+
+[class~=dialog] button[name="submit"] {
+	border-image: none;
+}
+
+.dialog button[name="cancel"],
+[class~=dialog] button[name="submit"] {
+	outline: 0;
+}
+
+.dialog button[name="cancel"],
+[class~=dialog] button[name="submit"] {
+	transition: all .1s ease-in-out;
+}
+
+.dialog {
+	left: 50%;
+}
+
+.dialog {
+	width: 375px;
+}
+
 .dialog button[name="cancel"] {
-	width: 17.6%;
-	height: 32px;
-  margin-left: 60px;
-  border: none;
-  text-transform: uppercase;
-  font-weight: 200;
-	border-radius: 10px;
-  color: rgb(53, 34, 34);
-  outline: 0;
-  background: #c74545;
-  transition: all 0.2s ease-in-out;
+	width: 20.6%;
 }
 
-.dialog button[name="cancel"]:hover {
-  letter-spacing: 1px;
-  color: #ffffff;
-  width: 17.6%;
+.dialog {
+	height: 1.25in;
 }
 
-.dialog button[name="submit"]:hover {
-  letter-spacing: 1px;
-  color: white;
-  width: 17.6%;
+.dialog button[name="cancel"] {
+	height: .25in;
 }
 
-.head::before,
-.head::after {
-	content: "";
+[class~=head]::after,
+[class~=head]::before {
 	flex-grow: 1;
+}
+
+[class~=head]::after,
+[class~=head]::before {
 	background: #00e1ff;
-	height: 2px;
-	margin: 0px 3px;
+}
+
+.dialog button[name="cancel"] {
+	margin-left: .166666667in;
+}
+
+.dialog {
+	transform: translate(-50%, -50%);
+}
+
+.dialog button[name="cancel"] {
+	border-left-width: medium;
+}
+
+[class~=head]::after,
+[class~=head]::before {
+	height: .09375pc;
+}
+
+.dialog button[name="cancel"] {
+	border-bottom-width: medium;
+}
+
+.dialog button[name="cancel"] {
+	border-right-width: medium;
+}
+
+.dialog button[name="cancel"] {
+	border-top-width: medium;
+}
+
+#controls {
+	bottom: 40;
+}
+
+.dialog button[name="cancel"] {
+	border-left-style: none;
+}
+
+.dialog {
+	border-radius: 1px;
+}
+
+[class~=head]::before,
+[class~=head]::after {
+	margin-left: 1.6875pt;
+}
+
+[class~=head]::after,
+[class~=head]::before {
+	margin-bottom: 0pt;
+}
+
+.dialog button[name="cancel"] {
+	border-bottom-style: none;
+}
+
+[class~=head] {
+	display: flex;
+}
+
+.dialog button[name="cancel"] {
+	border-right-style: none;
+}
+
+.dialog button[name="cancel"] {
+	border-top-style: none;
+}
+
+.dialog button[name="cancel"] {
+	border-left-color: currentColor;
+}
+
+.dialog button[name="cancel"] {
+	border-bottom-color: currentColor;
+}
+
+.dialog button[name="cancel"] {
+	border-right-color: currentColor;
+}
+
+[class~=head]::after,
+[class~=head]::before {
+	margin-right: 1.6875pt;
+}
+
+[class~=head]::before,
+[class~=head]::after {
+	margin-top: 0pt;
+}
+
+[class~=dialog] [class~=head] span::before {
+	display: inline-block;
+}
+
+.dialog button[name="cancel"] {
+	border-top-color: currentColor;
+}
+
+[class~=head] {
+	flex-basis: 100%;
+}
+
+.dialog button[name="cancel"] {
+	border-image: none;
+}
+
+.dialog button[name="cancel"] {
+	border-radius: .5px;
+}
+
+[class~=head] {
+	align-items: center;
+}
+
+.dialog button[name="cancel"] {
+	text-transform: uppercase;
+}
+
+.dialog button[name="cancel"] {
+	line-height: 25px;
+}
+
+[class~=head]::after {
+	content: "";
+}
+
+.dialog button[name="cancel"] {
+	font-weight: 200;
+}
+
+[class~=head] {
+	color: #00e1ff;
+}
+
+.dialog input[type="text"]:active,
+[class~=dialog] input[type="text"]:hover {
+	color: white;
+}
+
+#controls {
+	right: 40;
+}
+
+[class~=dialog] button[name="submit"]:hover,
+.dialog button[name="cancel"]:hover {
+	box-shadow: 0in 0pc 11.25pt -1px #0b9af5;
+}
+
+.dialog .head {
+	background-color: #27272d;
+}
+
+[class~=dialog] [class~=head] span::before {
+	height: 100%;
+}
+
+[class~=dialog] [class~=head] span::before {
+	vertical-align: middle;
+}
+
+.dialog .head {
+	text-align: center;
+}
+
+.dialog .head {
+	height: 1.875pc;
 }

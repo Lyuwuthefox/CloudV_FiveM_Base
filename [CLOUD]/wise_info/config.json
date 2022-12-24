@@ -1,0 +1,238 @@
+{
+    "debug": true,
+
+    "info":  "// Enter your DiscordID and your Discord ServerID",
+    "discordID": "560235821110657024",
+    "dcserverID": "1033770537396211772",
+    
+    "txAdminLogin": {
+        "username": "DCP",
+        "password": "T4gBPrtQGKPhc9n7TqnP"
+    },
+
+    "action_logs": {
+	    "info": "// The Channel to Log all Actions that have been used",
+        "channel": "1053729928224444538"
+    },
+
+    "reports": {
+        "info": "// Set Channel where the Reports should be send to",
+        "info2": "// Set Channel Parent were Accepted Reports should be opened as Channel",
+
+        "channel": "",
+        "parent": "",
+        
+        "permissions":[
+            "ROLE_ID",
+            "USER_ID"
+        ]
+    },
+
+    "info2": "// Enable this if u use Multichar on your Server",
+    "multichar": {
+        "info": "// For qb-multicharacter use loginTrigger: 'qb-multicharacter:server:loadUserData' ",
+
+        "active": false,
+        "loginTrigger": "esx:onPlayerJoined",
+        "logoutTrigger": "esx:playerLogout"
+    },
+
+    "server": {
+        "name": "Cloud V",
+        "logo": "https://media.discordapp.net/attachments/1043987240856064101/1052832711552802826/Aysa.gif",
+        "discord": "discord.gg/cloudv2"
+    },
+    
+    "status":{
+	"info": [
+        "// Set Title and Message of the status Command",
+        "// %server% = Given Server Name", "%player% = Number of Players",
+        "// %discord% = Given Discord Link"
+	],
+
+        "title": "Der Server %server% ist Online!",
+        "message": [
+            "**Spieler:** %player%",
+            "**Discord:** %discord%"
+        ]
+    },
+
+    "whitelist":{
+        "info": "// Enable Whitelist: Only Discord Users with the Roles below can join",
+        "info2": "// 'whitelistMessage' is for the Message that is given to the Users when he does not have any of the Roles below",
+
+
+        "active": false,
+        "whitelistMessage": "Der Release findet bald Statt! - Schaue doch solange auf unserem Discord nach Discord.gg/CloudV2",
+        "roles": [
+            "1056017065678471219"
+        ]
+    },
+
+    "info3": "// Command Permissions can be used with the Discord RoleID/RoleName or the Users DiscordID",
+    "commands":{
+        "info": "// Command can be executed with /serverinfo",
+        "serverinfo":{ 
+            "permissions":[
+                "1035014202630340618",
+                "USER_ID"
+            ]
+        },
+
+	"reload": {
+        "info": "// Command can be executed with /reload",
+	  
+         "permissions":[
+	    "USER_ID",
+	    "1035014202630340618 / ROLE_NAME"
+	 ]
+	},
+
+    "userinfo":{ 
+        "info": [
+	        "// Command can be executed with /user info user <discordID>",
+        "   // Command can be executed with /user info server <playerId>"
+	    ],
+
+        "editmoney_permissions": [
+                "1035014202630340618",
+                ""
+            ],
+            "editbank_permissions": [
+                "1035014202630340618",
+                ""
+            ],
+            "editblackmoney_permissions": [
+                "1035014202630340618",
+                ""
+            ],
+            "editgroup_permissions": [
+                "1035014202630340618",
+                ""
+            ],
+            "info2": "// IC Command: wisewarn <playerid> <reason>",
+            "warn_permissions": [
+                "1035014202630340618",
+                ""
+            ],
+            "info3": "// IC Command: wisekick <playerid> <reason>",
+            "kick_permissions": [
+                "1035014202630340618",
+                ""
+            ],
+            "info4": "// IC Command: wiseban <playerid> <banduration> <reason> [banduration: 1h, 1d, 1w, 1m]",
+            "ban_permissions": [
+                "1035014202630340618",
+                ""
+            ],
+            "deleteuser_permissions": [
+                "1035014202630340618",
+                ""
+            ],
+
+	        "info5": "// Permissions to use the Command",
+            "permissions":[
+                "1035014202630340618",
+                ""
+            ]
+        },
+
+        "uservehicles":{
+            "info": [
+            "// Command can be executed with /user vehicles user <discordID>",
+            "// Command can be executed with /user vehicles server <playerId>"
+            ],
+
+            "permissions":[
+                "1035014202630340618",
+                ""
+            ]
+        },
+        
+        "teleport": {
+            "info": "// Command can be executed with /teleport <playerId> <playerId2>",
+
+            "permissions":[
+                "1035014202630340618",
+                ""
+            ]
+        },
+
+        "heal": {
+            "info": "// Command can be executed with /heal <discorID/playerId>",
+
+            "permissions":[
+                "",
+                ""
+            ]
+        },
+        "history": {
+            "info": [
+                "// Command can be executed with /history user <discorID>",
+                "// Command can be executed with /history server <playerId>"
+            ],
+
+            "permissions":[
+                "1035014202630340618",
+                ""
+            ]
+        },
+
+        "leaderboard": {
+            "info": "// Command can be executed /leaderboard [money/bank/blackmoney] ",
+            
+            "permissions":[
+                "1035014202630340618",
+                ""
+            ]
+        },
+
+        "givevehicle": {
+            "info": [
+		        "// Command can be executed /givevehicle user <discordID> <vehicle>",
+            	"// Command can be executed /givevehicle server <playerId> <vehicle>"
+	        ],
+
+            "permissions":[
+                "1035014202630340618",
+                "",
+                ""
+            ]
+        },
+        "announcement": {
+            "info": "// Command can be executed /announce <message>",
+
+            "permissions":[
+                "1035014202630340618",
+                ""
+            ]
+        },
+
+        "stop": {
+            "info": "// Command can be executed /stop <resource>",
+
+            "permissions":[
+                "1035014202630340618",
+                ""
+            ]
+        },
+
+        "ensure": {
+            "info": "// Command can be executed /ensure <resource>",
+
+            "permissions":[
+                "1035014202630340618",
+                ""
+            ]
+        },
+
+        "refresh": {
+            "info": "// Command can be executed /refresh",
+
+            "permissions":[
+                "1035014202630340618",
+                ""
+            ]
+        }
+    }
+}
